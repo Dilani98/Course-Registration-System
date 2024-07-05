@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Course Registration Form</title>
+  <link rel="stylesheet" href="courseReg.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Course Registration Form</h1>
+    <form id="registration-form">
+      <div class="form-group">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+      </div>
+      <div class="form-group">
+        <label for="middle_name">Middle Name:</label>
+        <input type="text" id="middle_name" name="middle_name">
+      </div>
+      <div class="form-group">
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+      </div>
+      <div class="form-group">
+        <label for="birthdate">Birth Date:</label>
+        <select id="month" name="month" required>
+          <option value="">-- Month --</option>
+          <option value="01">January</option>
+          <option value="02">February</option>
+          <option value="03">March</option>
+          <option value="04">April</option>
+          <option value="05">May</option>
+          <option value="06">June</option>
+          <option value="07">July</option>
+          <option value="08">August</option>
+          <option value="09">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+      
+        <select id="day" name="day" required>
+          <option value="">-- day --</option>
+          <option value="">-- 1--</option>
+          <option value="">-- 2--</option>
+          <option value="">-- 3 --</option>
+          <option value="">-- 4 --</option> 
+          <option value="">-- 5 --</option>
+          <option value="">-- 6 --</option>
+          <option value="">-- 7 --</option>
+          <option value="">-- 8 --</option>
+          <option value="">-- 9 --</option>
+          <option value="">-- 10 --</option>
+          <option value="">-- 11 --</option>
+          <option value="">-- 12 --</option>
+          <option value="">-- 13 --</option>
+          <option value="">-- 14 --</option>
+          <option value="">-- 15 --</option>
+          <option value="">-- 16 --</option>
+          <option value="">-- 17 --</option>
+          <option value="">-- 18 --</option>
+          <option value="">-- 19--</option>
+          <option value="">-- 20 --</option>
+          <option value="">-- 21--</option>
+          <option value="">-- 22 --</option>
+          <option value="">-- 23 --</option>
+          <option value="">-- 24 --</option>
+          <option value="">-- 26 --</option>
+          <option value="">-- 27 --</option>
+          <option value="">-- 28 --</option>
+          <option value="">-- 29--</option>
+          <option value="">-- 30 --</option>
+          <option value="">-- 31 --</option>
+
+        </select>
+      
+        <select id="year" name="year" required>
+          <option value="">-- Year --</option>
+          <option value="">-- 1998--</option>
+          <option value="">-- 1999 --</option>
+          <option value="">-- 2000 --</option>
+          <option value="">-- 2001--</option>
+          <option value="">-- 2002 --</option>
+          <option value="">-- 2003 --</option>
+          <option value="">-- 2004 --</option>
+          <option value="">-- 2004 --</option>
+          <option value="">-- 2005 --</option>
+          <option value="">-- 2006--</option>
+          <option value="">-- 2007 --</option>
+          <option value="">-- 2008 --</option>
+          <option value="">-- 2009 --</option>
+          <option value="">-- 2010 --</option>
+          <option value="">-- 2011 --</option>
+          <option value="">-- 2012--</option>
+          <option value="">-- 2013 --</option>
+          <option value="">-- 2014 --</option>
+          <option value="">-- 2014 --</option>
+          <option value="">-- 2015 --</option>
+          <option value="">-- 2016 --</option>
+          <option value="">-- 2017 --</option>
+          <option value="">-- 2018 --</option>
+          <option value="">-- 2019 --</option>
+          <option value="">-- 2020 --</option>
+          <option value="">-- 2021--</option>
+          <option value="">-- 2022 --</option>
+          <option value="">-- 2023 --</option>
+          <option value="">-- 2024 --</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" id="street_address" name="street_address" placeholder="Street Address" required>
+        <input type="text" id="street_address2" name="street_address2" placeholder="Street Address Line 2">
+        <input type="text" id="state_province" name="state_province" placeholder="State/Province" required>
+        <input type="text" id="postal_code" name="postal_code" placeholder="Postal/Zip Code" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Student Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mobile_number">Mobile Number:</label>
+        <input type="tel" id="mobile_number" name="mobile_number" pattern="[0-9]{10}" required>
+      </div>
+      <div class="form-group">
+        <label for="educational_level">Educational Level:</label>
+        <select id="educational_level" name="educational_level" required>
+          <option value="">-- Select --</option>
+          <option value="high_school">High School</option>
+          <option value="undergraduate">Undergraduate</option>
+          <option value="graduate">Graduate</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="courses">Courses:</label>
+        <select id="courses" name="courses" required>
+          <option value="">-- Select --</option>
+          <option value="math">Information Technology</option>
+          <option value="science">Business & Management</option>
+          <option value="history">Programming Language</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="additional_comment">Additional Comment:</label>
+        <textarea id="additional_comment" name="additional_comment"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
